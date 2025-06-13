@@ -91,5 +91,10 @@ mymembertest.printyourhello()
 print(mymembertest.hello)
 
 
+membertest.hello = '클래스 맴버 변경'
+mymembertest2 = membertest()
+mymembertest2.printyourhello()
+
+
 mymembertest.printyourhello()
 
