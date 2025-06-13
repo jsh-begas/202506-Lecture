@@ -50,3 +50,19 @@ def calculator(a,b,operator='+'):
     print(f'a={a}')
     print(f'b={b}')
     return value
+
+
+#통장 예제
+class account():
+    def __init__(self):
+        self.balance=0
+        return None
+    def deposit(self, money):
+        self.balance = self.balance + money
+        print(f'잔액 = {self.balance}입니다')
+
+account1 = account()
+
+account1.deposit(100)
+
+account1.deposit(100)
