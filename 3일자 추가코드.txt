@@ -1,0 +1,33 @@
+3일자 추가 코드
+
+#(오류 뜨는 예제)
+results = []
+errors = []
+
+iterable = [1, 2, 'a', 3, 0, 4]  # example values that may cause errors
+
+for item in iterable:
+    result = 10 / item
+    results.append(result)
+
+
+print("Results:", results)
+print("Errors:", errors)
+
+
+#(오류를 try block으로 피해가는 예제)
+results = []
+errors = []
+
+iterable = [1, 2, 'a', 3, 0, 4]  # example values that may cause errors
+
+for item in iterable:
+    try:
+        # example operation that can fail: division
+        result = 10 / item
+        results.append(result)
+    except Exception:
+        errors.append(item)
+
+print("Results:", results)
+print("Errors:", errors)
