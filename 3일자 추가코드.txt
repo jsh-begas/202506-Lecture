@@ -98,3 +98,25 @@ mymembertest2.printyourhello()
 
 mymembertest.printyourhello()
 
+
+#메서드 오버라이딩 예제
+class ADD():
+    def __init__(self):
+        self.hello='안녕하세요'
+    
+    def add(self,a,b):
+        print(a+b)
+        return None
+
+class CALCULATOR(ADD):
+    def __init__(self):
+        self.hello='하이'
+        super().__init__()
+        print('덧셈을 시작합니다')
+        print(self.hello)
+        
+    def add(self,a,b,c):
+        print(a+b+c)
+
+myCALCULATOR = CALCULATOR()
+myCALCULATOR.add(2,3,4)
