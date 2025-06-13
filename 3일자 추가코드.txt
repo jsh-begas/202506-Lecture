@@ -31,3 +31,22 @@ for item in iterable:
 
 print("Results:", results)
 print("Errors:", errors)
+
+
+#계산기 (주석추가버전)
+def calculator(a,b,operator='+'):
+    '''
+    계산기입니다.
+    항 설명
+    a,b : 연산할 숫자
+    operator : 연산자
+    '''
+    if operator=='+':
+        value=a+b
+    else :
+        print("구현되지 않은 사칙연산 기호입니다")
+        return None
+    
+    print(f'a={a}')
+    print(f'b={b}')
+    return value
