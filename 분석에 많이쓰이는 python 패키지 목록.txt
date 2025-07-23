@@ -1,0 +1,20 @@
+# 데이터
+## 테이블형
+- Numpy Pandas
+- Pandas 대안 -> polars, pyarrow(.parquet)
+## 이미지형
+- pillow, cv2
+## 텍스트형 (...)
+# 탐색적 자료분석(시각화)
+- matplotlib, seaborn
+- plotnine
+# 전처리
+- scipy (여러 종류의 과학 알고리즘을 모아놓은 패키지)
+- (시계열 인자)
+- einops (데이터 차원 연산) (n, m) <-> (n, a, b)
+# 모델링 / 통계
+- scikit-learn (대부분의 유명한 ML모형)
+- statsmodels (대부분의 유명한 통계절차)
+- xgboost (의사결정나무 boosting), catboost, ..... 
+- pytorch, tensorflow(keras) (딥러닝 구현)
+  - huggingface (학습된 딥러닝 모형)
